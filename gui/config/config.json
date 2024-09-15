@@ -1,0 +1,55 @@
+{
+  "directories": [
+    {
+      "path": "%TEMP%",
+      "description": "Archivos Temporales del Usuario",
+      "enabled": false
+    },
+    {
+      "path": "%SystemRoot%\\Temp",
+      "description": "Archivos Temporales de Windows",
+      "enabled": false
+    },
+    {
+      "path": "%SystemRoot%\\Prefetch",
+      "description": "Archivos Prefetch de Windows",
+      "enabled": false
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Temp",
+      "description": "Archivos Temporales del Equipo",
+      "enabled": false
+    }
+  ],
+  "browser_cache_cleanup": {
+    "enabled": true,
+    "browsers": {
+      "chrome": true,
+      "firefox": true,
+      "edge": true
+    }
+  },
+  "exclude_files": [
+    "desktop.ini",
+    "thumbs.db"
+  ],
+  "secure_delete": true,
+  "backup_before_deleting": true,
+  "logging": {
+    "enabled": true,
+    "log_level": "INFO",
+    "log_to_file": true,
+    "log_file_path": "%LOCALAPPDATA%\\SystemOptimizer\\logs\\cleanup.log",
+    "log_to_console": true
+  },
+  "notifications": {
+    "enabled": true,
+    "show_notifications": true,
+    "notification_type": "popup",
+    "sound_notification": false
+  },
+  "test_mode": {
+    "enabled": false,
+    "dry_run": true
+  }
+}
